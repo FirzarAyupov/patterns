@@ -4,9 +4,11 @@ declare(strict_types=1);
 
 namespace App;
 
-require_once dirname(__DIR__).'/vendor/autoload.php';
-
+use App\Observer\Observer;
 use App\Strategy\Strategy;
 
-$strategy = new Strategy();
-$strategy->run();
+require_once dirname(__DIR__) . '/vendor/autoload.php';
+
+
+new Strategy();
+new Observer();

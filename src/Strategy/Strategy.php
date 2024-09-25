@@ -4,20 +4,17 @@ declare(strict_types=1);
 
 namespace App\Strategy;
 
+use App\Pattern;
 use App\Strategy\Entity\DecoyDuck;
 use App\Strategy\Entity\Duck;
 use App\Strategy\Entity\MallardDuck;
 use App\Strategy\Entity\RedheadDuck;
 use App\Strategy\Entity\RubberDuck;
 
-class Strategy
+class Strategy extends Pattern
 {
-    public function run(): void
+    public function printTest(): void
     {
-        echo '=================' . PHP_EOL;
-        echo 'Strategy Pattern' . PHP_EOL;
-        echo '=================' . PHP_EOL;
-        echo '<br>';
         $this->duck_create(new RubberDuck());
         $this->duck_create(new DecoyDuck());
         $this->duck_create(new MallardDuck());
