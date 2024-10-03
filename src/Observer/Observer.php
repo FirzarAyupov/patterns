@@ -21,5 +21,6 @@ class Observer extends Pattern
         echo 'Обновление данных метеостанции';
         $this->printEmptyLine();
         $weatherData->setMeasurements(90, 60, 34);
+        $this->printEmptyLine();
     }
 }
